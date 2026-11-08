@@ -1,0 +1,14 @@
+{
+  "name": "modele-de-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "7.4.2"
+  },
+  "packageManager": "pnpm@12.16.1"
+}
