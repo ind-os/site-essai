@@ -1,9 +1,11 @@
-# modele-de-site
+# site-essai
 
-Le modèle d'un site publié par son dépôt, pour Indos. Chaque nouveau site en est
-une copie. GitHub construit l'image du site et la pousse sur GHCR, puis demande
-au serveur de la reprendre ; la personne fait évoluer le site depuis Claude Code
-sur son ordinateur (`CLAUDE.md`).
+Le site d'essai d'Indos, copie du modèle `ind-os/modele-de-site` : une page
+« Hello World », publiée par son dépôt sur le banc d'essai d'Indos
+(`ind-os/serveur-essai`). Il sert les essais du kit sur un site publié par son
+dépôt (l'installation, le retrait, la publication par une poussée sur `main`)
+et la remontée du banc sur une machine neuve, qui le reprend à sa route. Il ne
+sert que le banc : les secrets de redéploiement de son dépôt sont ceux du banc.
 
 - Astro 7, sortie statique, une page « Hello World » ; pnpm 12, épinglé par
   `packageManager`.
@@ -65,16 +67,6 @@ l'installation :
 Le serveur tire l'image sans identifiant : le paquet GHCR se rend public une
 fois, après la première poussée, dans les réglages du paquet sur GitHub. Un
 paquet naît privé.
-
-## Copier le modèle
-
-```bash
-gh repo create <compte>/<site> --public --template ind-os/modele-de-site --clone
-```
-
-La copie pousse son premier commit sur `main` : son workflow construit et pousse
-son image, sans rien publier. Son paquet se rend public, puis le kit d'Indos
-installe le site sur le serveur.
 
 ## Claude Code
 
